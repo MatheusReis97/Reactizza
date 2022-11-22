@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Titulo</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://fb.me/react-with-addons-0.14.8.js"></script>
+    <script src="https://fb.me/react-dom-0.14.8.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script>
+</head>
+<body>
+        <div class="topo"></div>
+
+      <!--Espaço entre a header e o form-->
+      <div class="spacing"></div> 
+
+      <!-- Login -->
+      <div class="center">
+        <span id="login">
+          <div>
+            <input type="text" id="username" placeholder="username ou e-mail">
+          </div><br>
+          <div>
+            <input type="password" id="senha" placeholder="senha">
+          </div><br>
+          <button>Entrar</button>
+          <h5>Não tem uma conta?</h5>
+          <button onclick="iniciarCadastro()">Cadastre-se</button>
+        </span>
+
+        <!-- Cadastro -->
+        <span id="show">
+            <div>
+               <input type="text" id="nome" placeholder="nome completo">
+            </div><br>
+            <div>
+              <input type="password" id="senha" placeholder="senha">
+            </div><br>
+            <div>
+               <input type="password" id="senha" placeholder="confirme sua senha">
+            </div><br>
+            <div>
+              <input type="number" id="telefone" placeholder="telefone">
+            </div><br>
+            <div>
+               <input type="email" id="e-mail" placeholder="e-mail">
+            </div><br>
+            <button onclick="continuarCadastro()">Continuar</button>
+        </span>
+
+        <!-- Continuação do cadastro (endereço)-->
+        <span id="hidden">
+          <div>
+              <input type="text" id="endereco" placeholder="endereço">
+          </div><br>
+          <div>
+              <input type="number" id="endereco" placeholder="número">
+          </div><br>
+          <div>
+              <input type="text" id="endereco" placeholder="complemento">
+          </div><br>
+          <div>
+              <input type="text" id="endereco" placeholder="ponto de referência">
+          </div><br>
+          <button>Cadastrar</button>
+      </span>
+      </div>
+
+
+      <script src="main.js"></script>
+      <script type="text/babel" src="main.js"></script>
+</body>
+</html>
